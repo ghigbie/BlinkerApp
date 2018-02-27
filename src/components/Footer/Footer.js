@@ -1,0 +1,16 @@
+import React, {Component} from 'react';
+import './Footer.scss';
+
+const Footer = () => {
+    return (
+        <div>
+            <div className="footer">
+                <div className="container-fluid">
+                    Cars are Fun! You should buy one!
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Footer;
