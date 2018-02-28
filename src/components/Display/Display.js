@@ -9,10 +9,11 @@ class Display extends Component{
         return(
             <div className="container flex">
                 {this.props.carList.map((car) => 
-                    (<CarTile key={car.image_url}
+                    (<CarTile key={car.index}
+                              year={car.year}
                               make={car.make}
                               model={car.model}
-                              millege={car.millege}
+                              mileage={car.mileage}
                               image={this.props.image_url}/>))}
             </div>
         );
