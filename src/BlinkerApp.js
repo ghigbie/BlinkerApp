@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import logo from './logo.svg';
 import './BlinkerApp.css';
 
@@ -11,6 +12,13 @@ import CarTile from './components/CarTile/CarTile';
 class BlinkerApp extends Component {
   title = "Car Finder";
   subtitle ="Find the right car for you!"
+  
+  componentDidMount(){
+    axios.get('https://gist.githubusercontent.com/creatifyme/2a334c00a117097bfdb47f031edf292c/raw/efb52ecf1cf92e2261f504ec7639c68b5ff390bd/cars.json')
+    .then(response => {
+      console.log(response);
+    });
+  }
   
   render(){
     return(
