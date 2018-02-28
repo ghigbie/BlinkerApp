@@ -2,3 +2,19 @@
     max-width: 27%;
     margin: 3%;
 }
+
+.details{
+    padding: 3% 2% 3% 2%;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 800px){
+    .car-card{
+        max-width: 42%;
+    }
+}
+
+@media screen and (max-width: 799px){
+    .car-card{
+        max-width: 93%;
+    }
+}

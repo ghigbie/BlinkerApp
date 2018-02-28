@@ -17,7 +17,6 @@ class BlinkerApp extends Component {
       <div>
         <Header title={this.title}
                 subtitle={this.subtitle} />
-        <CarTile />
         <Display />
         <Footer />
       </div>
