@@ -5,7 +5,7 @@ import './BlinkerApp.css';
 import Header from './components/Header/Header';
 //import SearchBar from '/components/SearchBar/SearchBar'
 //import Display from './components/Display/Display';
-//import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 import CarTile from './components/CarTile/CarTile';
 
 class BlinkerApp extends Component {
@@ -18,6 +18,7 @@ class BlinkerApp extends Component {
         <Header title={this.title}
                 subtitle={this.subtitle} />
         <CarTile />
+        <Footer />
       </div>
     );
     
