@@ -14,7 +14,7 @@ class Display extends Component{
                               make={car.make}
                               model={car.model}
                               mileage={car.mileage}
-                              image={this.props.image_url}/>))}
+                              image={car.image_url}/>))}
             </div>
         );
     }

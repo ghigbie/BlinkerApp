@@ -13,7 +13,7 @@ class CarTile extends Component{
                 <p className="card-text">
                 {`This ${this.props.year} ${this.props.mmake} ${this.props.model} only has ${this.props.mileage} miles. It is a great car!`}
                 </p>
-                <a href="#" className="btn btn-outline-primary">{`More information about this ${this.props.make} ${this.props.model}`}</a>
+                <a href="#" className="btn btn-outline-primary">More Information</a>
               </div>
             </div>
         );
