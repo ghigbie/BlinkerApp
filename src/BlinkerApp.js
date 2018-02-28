@@ -6,6 +6,7 @@ import Header from './components/Header';
 import SearchBar from '/components/SearchBar'
 import Display from './components/Display';
 import Footer from './components/Footer';
+import CarTile from './components/CarTile';
 
 class BlinkerApp extends Component {
   title = "Car Finder";
@@ -16,6 +17,7 @@ class BlinkerApp extends Component {
       <div>
         <Header title={this.title}
                 subtitle={this.subtitle} />
+        <CarTile />
       </div>
     );
   }
