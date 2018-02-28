@@ -13,7 +13,7 @@ class Display extends Component{
 
     render(){
         return(
-            <div className="flex">
+            <div className="container flex">
                 {this.state.stuff.map((car) => <CarTile />)}
             </div>
         );
