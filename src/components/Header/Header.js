@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './header.css';
+import './Header.css';
 
 const Header = (props) => {
 
@@ -12,3 +12,5 @@ const Header = (props) => {
         </div>
     );
 }
+
+export default Header;

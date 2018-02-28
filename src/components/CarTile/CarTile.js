@@ -48,3 +48,5 @@ class CarTile extends Component{
         );
     }
 }
+
+export default CarTile;
