@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './Display.css';
 
+import SearchBar from './../SearchBar/SearchBar';
 import CarTile from './../CarTile/CarTile';
 
 class Display extends Component{
@@ -16,6 +17,7 @@ class Display extends Component{
         
         return(
             <div className="container flex">
+                <SearchBar />
                 {cars}
             </div>
         );
