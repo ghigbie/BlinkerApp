@@ -11,7 +11,7 @@ class CarTile extends Component{
               <div className="card-block container details">
                 <h4 className="card-title">{`${this.props.year} ${this.props.make} ${this.props.model}`}</h4>
                 <p className="card-text">
-                {`This ${this.props.year} ${this.props.mmake} ${this.props.model} only has ${this.props.mileage} miles. ${this.props.tagLine}`}
+                {`This ${this.props.year} ${this.props.mmake} ${this.props.model} only has ${this.props.mileage} miles. It\' a great car!`}
                 </p>
                 <a href="#" className="btn btn-outline-primary">More Information</a>
               </div>
