@@ -21,7 +21,11 @@ class CarTile extends Component{
                 </button>
               </div>
               
-              <Modal />
+              <Modal year={this.props.year}
+                     make={this.props.make}
+                     model={this.props.model}
+                     mileage={this.props.mileage}
+                     image={this.props.image}/>
             </div>
         );
     }

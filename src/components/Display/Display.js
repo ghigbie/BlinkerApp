@@ -12,6 +12,7 @@ class Display extends Component{
                               year={car.year}
                               make={car.make}
                               model={car.model}
+                              price={car.price}
                               mileage={car.mileage}
                               image={car.image_url}/>));
         
