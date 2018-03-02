@@ -3,6 +3,7 @@ import './Display.css';
 
 import SearchBar from './../SearchBar/SearchBar';
 import CarTile from './../CarTile/CarTile';
+import ErrorMessage from './../ErrorMessage/ErrorMessage';
 
 class Display extends Component{
     render(){
@@ -14,10 +15,12 @@ class Display extends Component{
                               mileage={car.mileage}
                               image={car.image_url}/>));
         
+        const error = (<ErrorMessage errorMessage={this.props.errorMessage} />);
+        
         return(
             <div className="container flex">
                 <SearchBar />
-                {cars}
+                {this.props.errorMessage? error : cars}
             </div>
         );
     }

@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import './ErrorMessage.css';
 
 const ErrorMessage = (props) => {
+    const style = { margin: '5% auto 5% auto'};
+    
     return(
-        <h3>{props.errorMessage}</h3>
+        <h3 style={style}>{props.errorMessage}</h3>
     );
 };
 

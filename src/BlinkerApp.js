@@ -28,7 +28,7 @@ class BlinkerApp extends Component {
     .catch(error => {
       console.log(error);
       const errorMessage = 'We\'re sorry. Something went wrong : (';
-      this.setState({errorMessage: errorMessage})
+      this.setState({errorMessage: errorMessage});
     });
   }
   
