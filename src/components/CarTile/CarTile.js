@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './CarTile.css';
 
+import Modal from './../Modal/Modal';
+
 class CarTile extends Component{
     render(){
         return(
@@ -14,7 +16,12 @@ class CarTile extends Component{
                 {`This ${this.props.year} ${this.props.mmake} ${this.props.model} only has ${this.props.mileage} miles. It\' a great car!`}
                 </p>
                 <a href="#" className="btn btn-outline-primary">More Information</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                Launch demo modal
+                </button>
               </div>
+              
+              <Modal />
             </div>
         );
     }
