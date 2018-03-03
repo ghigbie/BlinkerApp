@@ -15,9 +15,8 @@ class CarTile extends Component{
                 <p className="card-text">
                 {`This ${this.props.year} ${this.props.mmake} ${this.props.model} only has ${this.props.mileage} miles. It\' a great car!`}
                 </p>
-                <a href="#" className="btn btn-outline-primary">More Information</a>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                Launch demo modal
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#responsiveModal">
+                More Information
                 </button>
               </div>
               
