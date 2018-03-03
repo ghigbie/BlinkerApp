@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import logo from './logo.svg';
 import './BlinkerApp.css';
 
 import Header from './components/Header/Header';
-//import SearchBar from '/components/SearchBar/SearchBar'
 import Display from './components/Display/Display';
 import Footer from './components/Footer/Footer';
-import CarTile from './components/CarTile/CarTile';
 
 class BlinkerApp extends Component {
   state = {
