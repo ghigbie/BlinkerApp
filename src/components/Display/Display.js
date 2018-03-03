@@ -7,9 +7,9 @@ import ErrorMessage from './../ErrorMessage/ErrorMessage';
 
 class Display extends Component{
     render(){
-        const cars = this.props.carList.map((car) => 
-                    (<CarTile key={car.index}
-                              uniqueID={car.created_at}
+        const cars = this.props.carList.map((car, index) => 
+                    (<CarTile key={index}
+                              uniqueID={index}
                               year={car.year}
                               make={car.make}
                               model={car.model}

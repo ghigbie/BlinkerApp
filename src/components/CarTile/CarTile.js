@@ -4,6 +4,7 @@ import './CarTile.css';
 import Modal from './../Modal/Modal';
 
 class CarTile extends Component{
+    modalID =`modal${this.props.uniqueID}`
 
     render(){
         return(
@@ -16,12 +17,12 @@ class CarTile extends Component{
                 <p className="card-text">
                 {`This ${this.props.year} ${this.props.mmake} ${this.props.model} only has ${this.props.mileage} miles. It\' a great car!`}
                 </p>
-              <button type="button" className="btn btn-outline-primary" data-toggle="modal" data-target={`#${this.props.key}`}>
+              <button type="button" className="btn btn-outline-primary" data-toggle="modal" data-target={`#${this.modalID}`}>
                 More Information
                 </button>
               </div>
               
-              <Modal modalID={this.props.key}
+              <Modal modalID={this.modalID}
                      year={this.props.year}
                      make={this.props.make}
                      model={this.props.model}
