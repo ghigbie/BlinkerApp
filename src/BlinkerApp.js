@@ -16,8 +16,7 @@ class BlinkerApp extends Component {
   subtitle ='Find the right car for you!';
   
   componentDidMount(){
-    axios.get('https://gist.githubusercontent.com/creatifyme/2a334c00a117097bfdb47f031edf292c\
-    /raw/efb52ecf1cf92e2261f504ec7639c68b5ff390bd/cars.json')
+    axios.get('https://gist.githubusercontent.com/creatifyme/2a334c00a117097bfdb47f031edf292c/raw/efb52ecf1cf92e2261f504ec7639c68b5ff390bd/cars.json')
     .then(response => {
       this.setState({carList: response.data});
     })
