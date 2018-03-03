@@ -4,7 +4,8 @@ import './CarTile.css';
 import Modal from './../Modal/Modal';
 
 class CarTile extends Component{
-    modalID =`modal${this.props.uniqueID}`
+    modalID =`modal${this.props.uniqueID}`;
+    carTitleName =`${this.props.year} ${this.props.make} ${this.props.model}`;
 
     render(){
         return(
@@ -13,9 +14,9 @@ class CarTile extends Component{
                    src={this.props.image} 
                    alt="Card image cap"/>
               <div className="card-block container details">
-                <h4 className="card-title">{`${this.props.year} ${this.props.make} ${this.props.model}`}</h4>
+                <h4 className="card-title">{this.carTitleName}</h4>
                 <p className="card-text">
-                {`This ${this.props.year} ${this.props.mmake} ${this.props.model} only has ${this.props.mileage} miles. It\' a great car!`}
+                {`This ${this.carTitleName} only has ${this.props.mileage} miles. It\' a great car!`}
                 </p>
               <button type="button" className="btn btn-outline-primary" data-toggle="modal" data-target={`#${this.modalID}`}>
                 More Information
@@ -26,6 +27,7 @@ class CarTile extends Component{
                      year={this.props.year}
                      make={this.props.make}
                      model={this.props.model}
+                     carTitleName={this.carTitleName}
                      mileage={this.props.mileage}
                      image={this.props.image}/>
             </div>
