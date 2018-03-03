@@ -18,12 +18,14 @@ class CarTile extends Component{
                 <p className="card-text">
                 {`This ${this.carTitleName} only has ${this.props.mileage} miles. It\' a great car!`}
                 </p>
-              <button type="button" 
-                      className="btn btn-outline-primary btn-bottom" 
-                      data-toggle="modal" 
-                      data-target={`#${this.modalID}`}>
-                      More Information
-                </button>
+                <div>  
+                  <button type="button" 
+                          className="btn btn-outline-primary btn-bottom" 
+                          data-toggle="modal" 
+                          data-target={`#${this.modalID}`}>
+                          More Information
+                    </button>
+                </div>
               </div>
               
               <Modal modalID={this.modalID}
