@@ -23,10 +23,8 @@ class BlinkerApp extends Component {
     /raw/efb52ecf1cf92e2261f504ec7639c68b5ff390bd/cars.json')
     .then(response => {
       this.setState({carList: response.data});
-      console.log(response);
     })
     .catch(error => {
-      console.log(error);
       const errorMessage = 'We\'re sorry. Something went wrong : (';
       this.setState({errorMessage: errorMessage});
     });
