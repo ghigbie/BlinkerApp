@@ -4,7 +4,7 @@ import './Modal.css';
 const Modal = (props) => {
     return(
         <div className="modal fade" id="exampleModalLong" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-          <div className="modal-dialog" role="document">
+          <div className="modal-dialog modal-lg" role="document">
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title" id="exampleModalLongTitle">{`${props.year} ${props.make} ${props.model}`}</h5>
@@ -13,9 +13,10 @@ const Modal = (props) => {
                 </button>
               </div>
               <div className="modal-body">
+                <img className='modal-car-image' src={props.image}/>
         
-                <p> {`This ${this.props.year} ${this.props.mmake} ${this.props.model} only /
-                has ${this.props.mileage} miles. It\' a great car! This is a lot of detail about this car.`}</p>
+                <p> {`This ${props.year} ${props.make} ${props.model} only /
+                has ${props.mileage} miles. It\' a great car! This is a lot of detail about this car.`}</p>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt /
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco /
