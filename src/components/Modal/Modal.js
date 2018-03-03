@@ -5,7 +5,7 @@ const Modal = (props) => {
     const carTitleName = `${props.year} ${props.make} ${props.model}`; 
     return(
         <div className="modal fade" id={props.modalID} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-          <div className="modal-dialog modal-lg" role="document">
+          <div className="modal-dialog modal-lg modal-size" role="document">
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title" id="exampleModalLongTitle">{`${props.year} ${props.make} ${props.model}`}</h5>

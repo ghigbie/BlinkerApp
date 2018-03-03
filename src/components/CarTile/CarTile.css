@@ -1,11 +1,25 @@
 .car-card{
     max-width: 27%;
+    min-height: 360px;
     margin: 3%;
 }
 
 .details{
     padding: 3% 2% 3% 2%;
 }
+
+/* .flex-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.btn-bottom{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+
 
 @media screen and (max-width: 1025px) and (min-width: 800px){
     .car-card{

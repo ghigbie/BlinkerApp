@@ -13,13 +13,16 @@ class CarTile extends Component{
               <img className="card-img-top" 
                    src={this.props.image} 
                    alt="Card image cap"/>
-              <div className="card-block container details">
+              <div className="card-block container details flex-wrapper">
                 <h4 className="card-title">{this.carTitleName}</h4>
                 <p className="card-text">
                 {`This ${this.carTitleName} only has ${this.props.mileage} miles. It\' a great car!`}
                 </p>
-              <button type="button" className="btn btn-outline-primary" data-toggle="modal" data-target={`#${this.modalID}`}>
-                More Information
+              <button type="button" 
+                      className="btn btn-outline-primary btn-bottom" 
+                      data-toggle="modal" 
+                      data-target={`#${this.modalID}`}>
+                      More Information
                 </button>
               </div>
               
