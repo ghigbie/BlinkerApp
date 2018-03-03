@@ -9,6 +9,7 @@ class Display extends Component{
     render(){
         const cars = this.props.carList.map((car) => 
                     (<CarTile key={car.index}
+                              uniqueID={car.created_at}
                               year={car.year}
                               make={car.make}
                               model={car.model}

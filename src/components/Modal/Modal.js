@@ -3,7 +3,7 @@ import './Modal.css';
 
 const Modal = (props) => {
     return(
-        <div className="modal fade" id="responsiveModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div className="modal fade" id={props.modalID} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div className="modal-dialog modal-lg" role="document">
             <div className="modal-content">
               <div className="modal-header">

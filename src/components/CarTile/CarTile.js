@@ -4,6 +4,8 @@ import './CarTile.css';
 import Modal from './../Modal/Modal';
 
 class CarTile extends Component{
+    modalID=`${this.props.year}${this.props.make}${this.props.model}${this.props.key}`;
+
     render(){
         return(
             <div className="card car-card">
@@ -15,12 +17,13 @@ class CarTile extends Component{
                 <p className="card-text">
                 {`This ${this.props.year} ${this.props.mmake} ${this.props.model} only has ${this.props.mileage} miles. It\' a great car!`}
                 </p>
-              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#responsiveModal">
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target={`#${this.ModalID}`}>
                 More Information
                 </button>
               </div>
               
-              <Modal year={this.props.year}
+              <Modal modalID={this.modalID}
+                     year={this.props.year}
                      make={this.props.make}
                      model={this.props.model}
                      mileage={this.props.mileage}
