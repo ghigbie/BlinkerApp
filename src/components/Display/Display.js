@@ -29,8 +29,6 @@ class Display extends Component{
     }
 
     render(props){
-        console.log("Props" + this.props.carlist);
-        console.log("State" + this.state.carlist);
         const cars = this.state.carList.map((car, index) => 
                     (<CarTile key={index}
                               uniqueID={index}
@@ -46,7 +44,7 @@ class Display extends Component{
         return(
             <div className="container flex">
                 <SearchBar />
-                {this.props.errorMessage? error : cars}
+                {this.state.errorMessage? error : cars}
             </div>
         );
     }
