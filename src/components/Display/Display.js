@@ -8,7 +8,8 @@ import ErrorMessage from './../ErrorMessage/ErrorMessage';
 
 class Display extends Component{
     state = {
-            carList: []
+            carList: [],
+            errorMessage: ''
     }
 
     componentDidMount(){
@@ -18,7 +19,7 @@ class Display extends Component{
         })
         .catch(error => {
             const errorMessage = 'We\'re sorry. Something went wrong : (';
-            this.state({errorMessage: errorMessage});
+            this.setState({errorMessage: errorMessage});
         });
     }
 
@@ -40,7 +41,7 @@ class Display extends Component{
                               mileage={car.mileage}
                               image={car.image_url}/>));
         
-        const error = (<ErrorMessage errorMessage={this.props.errorMessage} />);
+        const error = (<ErrorMessage errorMessage={this.state.errorMessage} />);
         
         return(
             <div className="container flex">
