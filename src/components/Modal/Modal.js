@@ -18,8 +18,8 @@ const Modal = (props) => {
                      src={props.image} 
                      alt={`Image of ${props.year} ${props.make} ${props.model}`}/>
         
-                <p className="detailed-description"> This <strong>{`${props.year} ${props.make} ${props.model }`}</strong>
-                only has {props.mileage} miles. It' a great car!</p> 
+                <p className="detailed-description"> This <strong>{`${props.year} ${props.make} ${props.model}`}</strong>
+                 &nbsp;only has {props.mileage} miles. It' a great car!</p> 
                 
                 <p>Below is a lot more detail about this car. If your Latin is good, then you can read about
                 it, because Latin is a very useful language for describing vehicles.</p>
