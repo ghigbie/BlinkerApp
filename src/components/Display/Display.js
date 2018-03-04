@@ -23,12 +23,14 @@ class Display extends Component{
         });
     }
 
-    sortingMethod(sortingValue){
-        let sortedArray = [];
-        //this.state.carList
+    sortingMethod(){
+        console.log('sorting method called');
+        let data = this.state.carList.shift();
+        this.setState({carList: data});
     }
 
     render(props){
+        this.sortingMethod();
         const cars = this.state.carList.map((car, index) => 
                     (<CarTile key={index}
                               uniqueID={index}
