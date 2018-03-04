@@ -4,3 +4,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.flex-centered{
+    justify-content: center;
+    margin: 2% 0 3% 0;
+}
+
+.sorting{
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 530px){
+    .sorting{
+        margin-top: 3%;
+        min-width: 175px;
+        width: 85%;
+    }
+}
