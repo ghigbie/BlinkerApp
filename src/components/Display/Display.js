@@ -40,6 +40,7 @@ class Display extends Component{
                               price={car.price}
                               mileage={car.mileage}
                               image={car.image_url}/>));
+                             
         
         const error = (<ErrorMessage errorMessage={this.state.errorMessage} />);
         
