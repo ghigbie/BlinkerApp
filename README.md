@@ -1,6 +1,6 @@
 # Car Finder App
 
-This web app helps you find cars available for purchase. It is built with ReactJS (Create React App) and makes use of the Bootstrap 4 libaries.
+This web app helps you find cars available for purchase. It is built with ReactJS (Create React App) and makes use of the Bootstrap 4 library.
 
 ## Installation
 
